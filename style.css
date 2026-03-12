@@ -1,0 +1,42 @@
+/* akkus-ui / style.css - Ayhan'ın UI Kütüphanesi */
+
+.akkus-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.akkus-btn.primary {
+    background-color: #4f46e5; /* indigo */
+    color: white;
+}
+.akkus-btn.primary:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px);
+}
+
+.akkus-btn.secondary {
+    background-color: #6b7280; /* gray */
+    color: white;
+}
+.akkus-btn.secondary:hover {
+    background-color: #4b5563;
+}
+
+.akkus-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.akkus-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
