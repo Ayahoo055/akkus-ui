@@ -39,7 +39,43 @@
 
   <pre><code id="btn-secondary">&lt;button class="akkus-btn secondary"&gt;İkincil Buton&lt;/button&gt;</code></pre>
   <button class="copy-btn" onclick="copy('btn-secondary', this)">Kodu Kopyala</button>
+  <!-- Mevcut buton örneklerinin altına ekle -->
 
+  <h2>Yeni Buton Türleri</h2>
+
+  <div class="preview">
+    <h3>Success Butonu (Yeşil)</h3>
+    <button class="akkus-btn success">Başarılı Buton</button>
+  </div>
+
+  <pre><code id="btn-success">&lt;button class="akkus-btn success"&gt;Başarılı Buton&lt;/button&gt;</code></pre>
+  <button class="copy-btn" onclick="copy('btn-success', this)">Kodu Kopyala</button>
+
+  <div class="preview" style="margin-top: 32px;">
+    <h3>Danger Butonu (Kırmızı)</h3>
+    <button class="akkus-btn danger">Tehlike Butonu</button>
+  </div>
+
+  <pre><code id="btn-danger">&lt;button class="akkus-btn danger"&gt;Tehlike Butonu&lt;/button&gt;</code></pre>
+  <button class="copy-btn" onclick="copy('btn-danger', this)">Kodu Kopyala</button>
+
+
+  <h2>Card Örneği</h2>
+
+  <div class="preview">
+    <div class="akkus-card">
+      <h3>Bu bir kart başlığı</h3>
+      <p>Buraya açıklama metni gelir. İçine resim, liste, başka buton vs. koyabilirsin.</p>
+      <button class="akkus-btn primary" style="margin-top: 16px;">Detaylara Git</button>
+    </div>
+  </div>
+
+  <pre><code id="card-code">&lt;div class="akkus-card"&gt;
+  &lt;h3&gt;Bu bir kart başlığı&lt;/h3&gt;
+  &lt;p&gt;Buraya açıklama metni gelir...&lt;/p&gt;
+  &lt;button class="akkus-btn primary"&gt;Detaylara Git&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+  <button class="copy-btn" onclick="copy('card-code', this)">Kodu Kopyala</button>
   <script>
     function copy(id, btn) {
       const text = document.getElementById(id).innerText;
