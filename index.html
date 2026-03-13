@@ -4,14 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>akkus-ui - Dokümantasyon</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ayahoo055/akkus-ui/style.css">
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fff; color: #333; }
-    h1, h2 { color: #1e293b; }
-    .preview { border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; border-radius: 8px; background: #f8fafc; }
-    pre { background: #f1f5f9; padding: 16px; border-radius: 6px; overflow-x: auto; }
-    .copy-btn { background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; margin-top: 8px; font-size: 14px; }
-    .copy-btn:hover { background: #4f46e5; }
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #1e293b;
+    }
+    pre {
+      background: #f1f5f9;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
   </style>
 </head>
 <body>
@@ -25,63 +37,34 @@
   <h2>Buton Örnekleri</h2>
 
   <div class="preview">
-    <h3>Primary Buton</h3>
+    <h3>Primary Buton (Mor)</h3>
     <button class="akkus-btn primary">Birincil Buton</button>
   </div>
-
   <pre><code id="btn-primary">&lt;button class="akkus-btn primary"&gt;Birincil Buton&lt;/button&gt;</code></pre>
   <button class="copy-btn" onclick="copy('btn-primary', this)">Kodu Kopyala</button>
 
   <div class="preview" style="margin-top: 32px;">
-    <h3>Secondary Buton</h3>
+    <h3>Secondary Buton (Gri)</h3>
     <button class="akkus-btn secondary">İkincil Buton</button>
   </div>
-
   <pre><code id="btn-secondary">&lt;button class="akkus-btn secondary"&gt;İkincil Buton&lt;/button&gt;</code></pre>
   <button class="copy-btn" onclick="copy('btn-secondary', this)">Kodu Kopyala</button>
-  <!-- Mevcut buton örneklerinin altına ekle -->
-
-  <h2>Yeni Buton Türleri</h2>
-
-  <div class="preview">
-    <h3>Success Butonu (Yeşil)</h3>
-    <button class="akkus-btn success">Başarılı Buton</button>
-  </div>
-
-  <pre><code id="btn-success">&lt;button class="akkus-btn success"&gt;Başarılı Buton&lt;/button&gt;</code></pre>
-  <button class="copy-btn" onclick="copy('btn-success', this)">Kodu Kopyala</button>
 
   <div class="preview" style="margin-top: 32px;">
-    <h3>Danger Butonu (Kırmızı)</h3>
+    <h3>Danger Buton (Kırmızı)</h3>
     <button class="akkus-btn danger">Tehlike Butonu</button>
   </div>
-
   <pre><code id="btn-danger">&lt;button class="akkus-btn danger"&gt;Tehlike Butonu&lt;/button&gt;</code></pre>
   <button class="copy-btn" onclick="copy('btn-danger', this)">Kodu Kopyala</button>
 
-
-  <h2>Card Örneği</h2>
-
-  <div class="preview">
-    <div class="akkus-card">
-      <h3>Bu bir kart başlığı</h3>
-      <p>Buraya açıklama metni gelir. İçine resim, liste, başka buton vs. koyabilirsin.</p>
-      <button class="akkus-btn primary" style="margin-top: 16px;">Detaylara Git</button>
-    </div>
-  </div>
-
-  <pre><code id="card-code">&lt;div class="akkus-card"&gt;
-  &lt;h3&gt;Bu bir kart başlığı&lt;/h3&gt;
-  &lt;p&gt;Buraya açıklama metni gelir...&lt;/p&gt;
-  &lt;button class="akkus-btn primary"&gt;Detaylara Git&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-  <button class="copy-btn" onclick="copy('card-code', this)">Kodu Kopyala</button>
   <script>
     function copy(id, btn) {
       const text = document.getElementById(id).innerText;
       navigator.clipboard.writeText(text);
       btn.innerText = 'Kopyalandı!';
-      setTimeout(() => btn.innerText = 'Kodu Kopyala', 2000);
+      setTimeout(() => {
+        btn.innerText = 'Kodu Kopyala';
+      }, 2000);
     }
   </script>
 
