@@ -52,7 +52,7 @@
 
 /* Yeni: Danger Butonu (kırmızı) */
 .akkus-btn.danger {
-    background-color: #ef4444; /* kırmızı */
+    background-color: red; /* kırmızı */s
     color: white;
 }
 .akkus-btn.danger:hover {
