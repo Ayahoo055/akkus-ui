@@ -1,21 +1,22 @@
-<html> 
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
+
 # akkus-ui
 Kendi Bootstrap benzeri UI kütüphanem.
 ## Buton Örnekleri
 
 ### Primary Buton
-
-<button class="akkus-btn primary">Birincil Buton</button>
-
 **Kodu kopyala:**
-
-```html
+<html> 
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
 <button class="akkus-btn primary">Birincil Buton</button>
 
-<button class="akkus-btn secondary">İkincil Buton</button>
+
+
+
+<button class="akkus-btn primary">Birincil Buton</button>
+
+
 </body>
 </html>
