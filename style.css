@@ -1,20 +1,19 @@
-/* akkus-ui / style.css - Temiz ve güncel hali */
+/* akkus-ui / style.css - Çalışan hali */
 
 .akkus-btn {
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
-    color: white;
+    transition: all 0.2s;
 }
 
 .akkus-btn.primary {
-    background-color: #6366f1; /* indigo mor */
+    background-color: #6366f1; /* mor */
+    color: white;
 }
-
 .akkus-btn.primary:hover {
     background-color: #4f46e5;
     transform: translateY(-2px);
@@ -22,8 +21,8 @@
 
 .akkus-btn.secondary {
     background-color: #6b7280; /* gri */
+    color: white;
 }
-
 .akkus-btn.secondary:hover {
     background-color: #4b5563;
     transform: translateY(-2px);
@@ -31,20 +30,20 @@
 
 .akkus-btn.danger {
     background-color: #ef4444; /* kırmızı */
+    color: white;
 }
-
 .akkus-btn.danger:hover {
     background-color: #dc2626;
     transform: translateY(-2px);
 }
 
-/* Opsiyonel yardımcı stiller (dokümantasyon için) */
+/* Yardımcı stiller */
 .preview {
-    border: 1px solid #e2e8f0;
-    padding: 24px;
-    margin: 24px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
     border-radius: 8px;
-    background: #f8fafc;
+    background: #f9f9f9;
 }
 
 .copy-btn {
@@ -54,9 +53,8 @@
     padding: 8px 16px;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 10px;
 }
-
 .copy-btn:hover {
     background: #4f46e5;
 }
