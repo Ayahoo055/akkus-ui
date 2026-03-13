@@ -40,3 +40,36 @@
     margin: 0 auto;
     padding: 0 16px;
 }
+/* Yeni: Success Butonu (yeşil) */
+.akkus-btn.success {
+    background-color: #10b981; /* yeşil */
+    color: white;
+}
+.akkus-btn.success:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+/* Yeni: Danger Butonu (kırmızı) */
+.akkus-btn.danger {
+    background-color: #ef4444; /* kırmızı */
+    color: white;
+}
+.akkus-btn.danger:hover {
+    background-color: #dc2626;
+}
+
+/* Yeni: Basit Card Component */
+.akkus-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin: 20px 0;
+}
+
+.akkus-card h3 {
+    margin-top: 0;
+    color: #1e293b;
+}
