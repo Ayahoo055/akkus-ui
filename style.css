@@ -1,13 +1,13 @@
-/* akkus-ui / style.css - Ayhan'ın UI Kütüphanesi */
+/* akkus-ui / style.css - Temiz ve güncel hali */
 
 .akkus-btn {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     color: white;
 }
 
@@ -38,7 +38,7 @@
     transform: translateY(-2px);
 }
 
-/* Dokümantasyon için yardımcı stiller */
+/* Opsiyonel yardımcı stiller (dokümantasyon için) */
 .preview {
     border: 1px solid #e2e8f0;
     padding: 24px;
@@ -55,7 +55,6 @@
     border-radius: 6px;
     cursor: pointer;
     margin-top: 8px;
-    font-size: 14px;
 }
 
 .copy-btn:hover {
