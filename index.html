@@ -6,30 +6,21 @@
   <title>akkus-ui - Dokümantasyon</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ayahoo055/akkus-ui/style.css">
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      background: #fff;
-      color: #333;
+    body { 
+      font-family: system-ui, sans-serif; 
+      max-width: 900px; 
+      margin: 40px auto; 
+      padding: 20px; 
+      line-height: 1.6; 
     }
-    h1, h2, h3 {
-      color: #1e293b;
-    }
-    pre {
-      background: #f1f5f9;
-      padding: 16px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
+    h1, h2, h3 { color: #333; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; }
   </style>
 </head>
 <body>
 
   <h1>akkus-ui</h1>
-  <p>Kendi Bootstrap benzeri UI kütüphanem. Sadece class'ları kopyala-yapıştır!</p>
+  <p>Kendi Bootstrap benzeri UI kütüphanem. Sadece class'ları kopyala!</p>
 
   <h2>Kullanım</h2>
   <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ayahoo055/akkus-ui/style.css"&gt;</code></pre>
@@ -40,31 +31,29 @@
     <h3>Primary Buton (Mor)</h3>
     <button class="akkus-btn primary">Birincil Buton</button>
   </div>
-  <pre><code id="btn-primary">&lt;button class="akkus-btn primary"&gt;Birincil Buton&lt;/button&gt;</code></pre>
-  <button class="copy-btn" onclick="copy('btn-primary', this)">Kodu Kopyala</button>
+  <pre><code id="btn1">&lt;button class="akkus-btn primary"&gt;Birincil Buton&lt;/button&gt;</code></pre>
+  <button class="copy-btn" onclick="copyCode('btn1', this)">Kodu Kopyala</button>
 
-  <div class="preview" style="margin-top: 32px;">
+  <div class="preview" style="margin-top: 30px;">
     <h3>Secondary Buton (Gri)</h3>
     <button class="akkus-btn secondary">İkincil Buton</button>
   </div>
-  <pre><code id="btn-secondary">&lt;button class="akkus-btn secondary"&gt;İkincil Buton&lt;/button&gt;</code></pre>
-  <button class="copy-btn" onclick="copy('btn-secondary', this)">Kodu Kopyala</button>
+  <pre><code id="btn2">&lt;button class="akkus-btn secondary"&gt;İkincil Buton&lt;/button&gt;</code></pre>
+  <button class="copy-btn" onclick="copyCode('btn2', this)">Kodu Kopyala</button>
 
-  <div class="preview" style="margin-top: 32px;">
+  <div class="preview" style="margin-top: 30px;">
     <h3>Danger Buton (Kırmızı)</h3>
     <button class="akkus-btn danger">Tehlike Butonu</button>
   </div>
-  <pre><code id="btn-danger">&lt;button class="akkus-btn danger"&gt;Tehlike Butonu&lt;/button&gt;</code></pre>
-  <button class="copy-btn" onclick="copy('btn-danger', this)">Kodu Kopyala</button>
+  <pre><code id="btn3">&lt;button class="akkus-btn danger"&gt;Tehlike Butonu&lt;/button&gt;</code></pre>
+  <button class="copy-btn" onclick="copyCode('btn3', this)">Kodu Kopyala</button>
 
   <script>
-    function copy(id, btn) {
-      const text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text);
+    function copyCode(id, btn) {
+      const code = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(code);
       btn.innerText = 'Kopyalandı!';
-      setTimeout(() => {
-        btn.innerText = 'Kodu Kopyala';
-      }, 2000);
+      setTimeout(() => btn.innerText = 'Kodu Kopyala', 2000);
     }
   </script>
 
