@@ -1,108 +1,63 @@
 /* akkus-ui / style.css - Ayhan'ın UI Kütüphanesi */
 
 .akkus-btn {
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     border-radius: 6px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
+    color: white;
 }
 
 .akkus-btn.primary {
-    background-color: #4f46e5; /* indigo */
-    color: white;
+    background-color: #6366f1; /* indigo mor */
 }
+
 .akkus-btn.primary:hover {
-    background-color: #4338ca;
-    transform: translateY(-1px);
+    background-color: #4f46e5;
+    transform: translateY(-2px);
 }
 
 .akkus-btn.secondary {
-    background-color: #6b7280; /* gray */
-    color: white;
+    background-color: #6b7280; /* gri */
 }
+
 .akkus-btn.secondary:hover {
     background-color: #4b5563;
-}
-
-.akkus-card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e5e7eb;
-}
-
-.akkus-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-/* Yeni: Success Butonu (yeşil) */
-.akkus-btn.success {
-    background-color: #10b981; /* yeşil */
-    color: white;
-}
-.akkus-btn.success:hover {
-    background-color: #059669;
     transform: translateY(-2px);
 }
 
-/* Yeni: Danger Butonu (kırmızı) */
-.akkus-btn.danger {
-    background-color: red; /* kırmızı */s
-    color: white;
-}
-.akkus-btn.danger:hover {
-    background-color: #dc2626;
-}
-
-/* Yeni: Basit Card Component */
-.akkus-card {
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin: 20px 0;
-}
-
-.akkus-card h3 {
-    margin-top: 0;
-    color: #1e293b;
-}
-/* Yeni: Success Butonu (yeşil) */
-.akkus-btn.success {
-    background-color: #10b981; /* yeşil */
-    color: white;
-}
-.akkus-btn.success:hover {
-    background-color: #059669;
-    transform: translateY(-2px);
-}
-
-/* Yeni: Danger Butonu (kırmızı) */
 .akkus-btn.danger {
     background-color: #ef4444; /* kırmızı */
-    color: white;
 }
+
 .akkus-btn.danger:hover {
     background-color: #dc2626;
+    transform: translateY(-2px);
 }
 
-/* Yeni: Basit Card Component */
-.akkus-card {
-    background: white;
+/* Dokümantasyon için yardımcı stiller */
+.preview {
     border: 1px solid #e2e8f0;
-    border-radius: 12px;
     padding: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin: 20px 0;
+    margin: 24px 0;
+    border-radius: 8px;
+    background: #f8fafc;
 }
 
-.akkus-card h3 {
-    margin-top: 0;
-    color: #1e293b;
+.copy-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.copy-btn:hover {
+    background: #4f46e5;
 }
