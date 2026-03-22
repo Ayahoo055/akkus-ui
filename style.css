@@ -55,47 +55,49 @@
     cursor: pointer;
     margin-top: 10px;
 }
-/* Hazır Menü (Navbar) Örneği */
+/* Hazır Menü (Navbar) Örneği - DÜZELTİLMİŞ HALİ */
 .akkus-navbar {
-  display: flex;
-	border-radius:12px;
-	background-color: royalblue;
+    display: flex;
+    border-radius: 12px;
+    background-color: royalblue;
+    overflow: hidden;               /* taşmayı engellemek için önemli */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin: 30px 0;
 }
 
 .akkus-navbar div {
-   background-color:royalblue ;
-    height: 45px;
-    width: 145px;
-    font-size: 22px;
+    flex: 1;                        /* eşit genişlikte bölünür */
+    height: 58px;                   /* biraz daha ferah olsun */
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    padding-top: 12px;
-    transition: 0.7s ease;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    background-color: royalblue;
 }
 
+.akkus-navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.akkus-navbar div:hover {
+    background-color: dodgerblue;
+    transform: translateY(-2px);
+}
+
+.akkus-navbar div:hover a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* İlk ve son div'in köşelerini yuvarlak yap */
 .akkus-navbar div:first-child {
     border-radius: 12px 0 0 12px;
 }
 
 .akkus-navbar div:last-child {
     border-radius: 0 12px 12px 0;
-}
-
-.akkus-navbar a {
-   text-decoration: none;
-     color: whitesmoke;
-     transition: 0.7s ease;
-}
-
-.akkus-navbar div:hover {
-    background-color: dodgerblue;
-}
-
-.akkus-navbar div:hover a {
-    font-size: 25px;
-    font-weight: 600;
-}
-.copy-btn:hover {
-    background: #4f46e5;
 }
