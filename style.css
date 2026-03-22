@@ -1,4 +1,4 @@
-/* akkus-ui / style.css - Çalışan hali */
+/* akkus-ui / style.css - Güncel ve çalışan hali */
 
 .akkus-btn {
     padding: 10px 20px;
@@ -55,7 +55,14 @@
     cursor: pointer;
     margin-top: 10px;
 }
-/* Hazır Menü (Navbar) - Daha güçlü seçicilerle */
+.copy-btn:hover {
+    background: #4f46e5;
+}
+
+/* ────────────────────────────────────────────── */
+/* Hazır Menü (Navbar) - Çalışan ve temiz hali    */
+/* ────────────────────────────────────────────── */
+
 .akkus-navbar {
     display: flex;
     border-radius: 12px;
@@ -72,11 +79,10 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
-    background-color: royalblue; /* her div'e ayrı background */
 }
 
 .akkus-navbar > div > a {
-    color: white !important;          /* beyaz rengi zorla */
+    color: white !important;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -97,6 +103,9 @@
     border-radius: 12px 0 0 12px;
 }
 
+.akkus-navbar > div:last-child {
+    border-radius: 0 12px 12px 0;
+}
 .akkus-navbar > div:last-child {
     border-radius: 0 12px 12px 0;
 }
