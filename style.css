@@ -57,23 +57,21 @@
 }
 /* Hazır Menü (Navbar) Örneği */
 .akkus-navbar {
-    display: flex;
-    border-radius: 12px;
-    background-color: royalblue;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    margin: 20px 0;
+  display: flex;
+	border-radius:12px;
+	background-color: royalblue;
 }
 
 .akkus-navbar div {
-    flex: 1;
-    height: 58px;
+   background-color:royalblue ;
+    height: 45px;
+    width: 145px;
+    font-size: 22px;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.4s ease;
+    padding-top: 12px;
+    transition: 0.7s ease;
 }
 
 .akkus-navbar div:first-child {
@@ -85,9 +83,9 @@
 }
 
 .akkus-navbar a {
-    color: whitesmoke;
-    text-decoration: none;
-    transition: all 0.4s ease;
+   text-decoration: none;
+     color: whitesmoke;
+     transition: 0.7s ease;
 }
 
 .akkus-navbar div:hover {
@@ -95,7 +93,7 @@
 }
 
 .akkus-navbar div:hover a {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 .copy-btn:hover {
