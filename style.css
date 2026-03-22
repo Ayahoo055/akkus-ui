@@ -55,22 +55,22 @@
     cursor: pointer;
     margin-top: 10px;
 }
-/* Hazır Menü (Navbar) Örneği - DÜZELTİLMİŞ HALİ */
+/* Hazır Menü (Navbar) - Düzeltilmiş ve daha güvenilir hali */
 .akkus-navbar {
     display: flex;
     border-radius: 12px;
     background-color: royalblue;
-    overflow: hidden;               /* taşmayı engellemek için önemli */
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     margin: 30px 0;
 }
 
 .akkus-navbar div {
-    flex: 1;                        /* eşit genişlikte bölünür */
-    height: 58px;                   /* biraz daha ferah olsun */
+    flex: 1;                    /* eşit genişlik – önemli! */
+    height: 58px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;        /* dikey merkezleme */
+    justify-content: center;    /* yatay merkezleme */
     font-size: 18px;
     font-weight: 500;
     transition: all 0.5s ease;
@@ -85,7 +85,6 @@
 
 .akkus-navbar div:hover {
     background-color: dodgerblue;
-    transform: translateY(-2px);
 }
 
 .akkus-navbar div:hover a {
@@ -93,7 +92,7 @@
     font-weight: 600;
 }
 
-/* İlk ve son div'in köşelerini yuvarlak yap */
+/* Köşeleri yuvarlak yap */
 .akkus-navbar div:first-child {
     border-radius: 12px 0 0 12px;
 }
