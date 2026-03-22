@@ -55,7 +55,7 @@
     cursor: pointer;
     margin-top: 10px;
 }
-/* Hazır Menü (Navbar) - Temiz ve Çalışır Hali */
+/* Hazır Menü (Navbar) - Daha güçlü seçicilerle */
 .akkus-navbar {
     display: flex;
     border-radius: 12px;
@@ -65,37 +65,38 @@
     margin: 30px 0;
 }
 
-.akkus-navbar div {
-    flex: 1;                        /* eşit genişlik – en kritik kısım */
+.akkus-navbar > div {
+    flex: 1;
     height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
+    background-color: royalblue; /* her div'e ayrı background */
+}
+
+.akkus-navbar > div > a {
+    color: white !important;          /* beyaz rengi zorla */
+    text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.5s ease;
 }
 
-.akkus-navbar a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.5s ease;
+.akkus-navbar > div:hover {
+    background-color: dodgerblue !important;
 }
 
-.akkus-navbar div:hover {
-    background-color: dodgerblue;
-}
-
-.akkus-navbar div:hover a {
+.akkus-navbar > div:hover > a {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Köşeleri yuvarlak yap */
-.akkus-navbar div:first-child {
+.akkus-navbar > div:first-child {
     border-radius: 12px 0 0 12px;
 }
 
-.akkus-navbar div:last-child {
+.akkus-navbar > div:last-child {
     border-radius: 0 12px 12px 0;
 }
